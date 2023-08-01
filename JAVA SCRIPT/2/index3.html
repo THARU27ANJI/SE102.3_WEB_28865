@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Question 03
+        </title>
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <table border="1" id="abc">
+                <tr>
+                    <td>Row 1 Cell 1</td>
+                    <td>Row 1 Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Cell 1</td>
+                    <td>Row 2 Cell 2</td>
+                </tr>
+            </table><br>
+
+            <button onclick="x();">
+                Insert Row
+            </button> </center>
+             
+            <script>
+           table = document.getElementById('abc')
+       
+           function x() {
+           var row = table.insertRow();
+           var cell1 = row.insertCell();
+           var cell2 = row.insertCell();
+
+           cell1.textContent = "New Cell 1";
+           cell2.textContent = "New Cell 2";
+           }
+
+   </script>
+    </body>
+</html>
