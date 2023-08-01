@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            js 4
+        </title>
+    </head>
+    <body>
+        <center>
+            <TABLE style="border: 1px solid black; background-color: black;">
+                <TR>
+                    <TD>
+                        <div style="background-color: orange; padding: 10px;">
+                        <lable style="color: yellow; text-align: left; ">Sign Up</lable></div>   
+                        <form name="abc">
+                            <table>
+                                <tr>
+                                    <td> <lable style="color: yellow;"> First Name</lable></td>
+                                    <td> <input type="text" name="fn" placeholder="Enter First Name"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;"> Last Name</label></td>
+                                    <td> <input type="text" name="ln" placeholder="Enter Last Name"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Date of Birth</label></td>
+                                    <td> <input type="Date" name="dob"></td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Gender</label></td>
+                                    <td> <input type="radio" name="gen" value="m"><lable style="color: yellow;">Male &nbsp</lable> <input type="radio" name="gen" value="f"><label style="color: yellow;">Female&nbsp</lable></td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Country</label></td>
+                                    <td> <select id="coun">
+                                        <option>Country</option>
+                                        <option>Sri Lanka</option>
+                                        <option>Canada</option>
+                                        <option>UK</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Email</label></td>
+                                    <td> <input type="text" name="em" placeholder="Enter E-mail"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Phone</label></td>
+                                    <td> <input type="text" name="pn" placeholder="Enter Phone"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Password</label></td>
+                                    <td> <input type="text" name="pw"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label style="color: yellow;">Confirm Password</label></td>
+                                    <td> <input type="text" name="cpw"> </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> <input type="checkbox"><lable style="color: yellow;">I Agree to the Terms of use</lable> </td>
+                                </tr>
+                            </table>
+                            <div style="background-color: orange; padding: 10px;">
+                            <input style="border: 1px green solid; padding: 5px; background-color: green; color: white;" type="submit" value="Submit">&nbsp
+                            <input style="border: 1px red solid; padding: 5px; background-color: red; color: white;" type="reset" value="Cancle">
+                            </div>
+                        </form>
+                    </TD>
+                </TR>
+            </TABLE>
+        </center>
+
+        <script>
+            function x(){
+                if(document.log.fn.value==""){
+                    alert("Enter First Name");
+                }
+                if(document.log.ln.value==""){
+                    alert("Enter Last Name");
+                }
+                if(document.log.dob.value==""){
+                    alert("Enter Date of Birth");
+                }
+                if(document.log.gen.value==""){
+                    alert("Enter Gender");
+                }
+                if(document.log.con.value==""){
+                    alert("Enter Country");
+                }
+                if(document.log.email.value==""){
+                    alert("Enter Email");
+                }
+                if(document.log.phone.value==""){
+                    alert("Enter Phone");
+                }
+                if(document.log.pass.value==""){
+                    alert("Enter Password");
+                }
+                if(document.log.cpass.value==""){
+                    alert("Enter Confirm Password");
+                }
+                if(document.log.pass.value!=document.log.cpass.value){
+                    alert("Confirm Password Does Not Match");
+                }
+                if (!(document.log.phone.value.length === 10 && !isNaN(document.log.phone.value))) {
+                    alert('Phone number is not valid!');
+              }
+            }
+        </script>
+    </body>
+</html>
