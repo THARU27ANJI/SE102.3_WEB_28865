@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>
+        Question 02
+    </title>
+    </head>
+    <body>
+    <input type="button" id="Button" value="Grade" onclick="y();"></input>
+    <script> 
+    function y()
+    {
+        a1=parseFloat(prompt("Enter a mark"));
+        a2=parseFloat(prompt("Enter a mark"));
+        a3=parseFloat(prompt("Enter a mark"));
+        a4=parseFloat(prompt("Enter a mark"));
+        a5=parseFloat(prompt("Enter a mark"));
+
+        sum=a1+a2+a3+a4+a5;
+        average=sum/5.0; 
+
+        document.write("Sum is: " +sum);
+        document.write("<br>Average is: " +average);
+
+        if(average>=30)
+        {
+            alert("Congrats! You passed");
+        }
+        else 
+        {
+            alert("Better luck next time");
+        }
+    }
+    </script>
+    </body>
+</html>
